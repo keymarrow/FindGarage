@@ -1,0 +1,100 @@
+
+// Buttons
+
+.button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius:0;
+	border-style: solid;
+	border-width: 1px;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: block;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: normal;
+	margin: 0 0 15px;
+	padding: 7px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+
+	&:focus {
+		outline: 0;
+	}
+
+	&.default {
+		background-color: $mischka;
+		border-color: $mischka;
+		color: $dove-gray;
+	}
+
+	&.action {
+		background-color: $silver-tree;
+		color: $white;
+		border-color: $silver-tree;
+	}
+
+	&.cancel {
+		background-color: $mandy;
+		color: $white;
+		border-color: $mandy;
+	}
+
+	&.plain {
+		background-color: transparent;
+		border-color: $white;
+		color: $white;
+	}
+
+	&.radius {
+		@include border-radius(3px);
+	}
+
+	&.border-thick {
+		border-width: 3px;
+	}
+
+	&.expand {
+		width: 100%;
+	}
+
+}
+
+.button-icon {
+  left: 20px;
+  position: absolute;
+  top: 10px;
+}
+
+.button-group {
+  width: 100%;
+
+	&.one {
+		.button {
+			width: 100%;
+		}
+	}
+
+	&.two {
+		.button {
+			width: 100%;
+			@media #{$medium-up} {
+	  		width: 49.3%
+	  	}
+		}
+	}
+
+	.button {
+		display: inline-block;
+	}
+}
+
+// Fix for extra padding on buttons in Firefox
+// @see {@link https://bugzilla.mozilla.org/show_bug.cgi?id=140562}
+button::-moz-focus-inner {
+    border:0;
+    padding:0;
+}

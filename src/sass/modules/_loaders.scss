@@ -1,0 +1,166 @@
+
+// Loaders
+
+.loader {
+  @include box-sizing(border-box);
+  @include border-radius(40px);
+  @include animation(spin 1.0s infinite linear);
+  border-style: solid;
+  border-color: $white;
+  border-width: 10px;
+  border-top-color: transparent;
+  position: absolute;
+}
+
+.main-loader {
+	@extend .loader;
+	width: 80px;
+  height: 80px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.modal-loader {
+	@extend .loader;
+	width: 30px;
+  height: 30px;
+	border-width: 4px;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 9999;
+
+  @media #{$medium-up} {
+  	width: 40px;
+  	height: 40px;
+  	border-width: 5px;
+  	top: 57px;
+  }
+}
+
+.uber-loader {
+	@extend .loader;
+	background: $ebony;
+	border-color: $java;
+	border-top-color: transparent;
+  border-width: 2px;
+  height: 15px;
+  left: 5px;
+  margin: auto;
+  top: 3px;
+  width: 15px;
+  z-index: 9999;
+
+  @media #{$medium-up} {
+		height: 16px;
+		left: 7px;
+		top: 5px;
+		width: 16px;
+  }
+}
+
+.map-loader {
+	display: table;
+	height: 100%;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	width: 100%;
+
+	.content {
+		display: table-cell;
+		vertical-align: middle;
+
+		.loader-outer {
+		  background: rgba(255,255,255,0.5);
+		  width: 36px;
+		  height: 36px;
+		  left: 0;
+		  margin: auto;
+		  right: 0;
+		  top: 46%;
+		  z-index: 9999;
+		  position: relative;
+		  @include border-radius(5px);
+
+		  @media #{$medium-up} {
+		  	width: 50px;
+		  	height: 50px;
+		  }
+
+			.loader-inner {
+				@extend .loader;
+				border-color: $mandy;
+				border-top-color: transparent;
+				border-width: 4px;
+				width: 30px;
+			  height: 30px;
+			  left: 0;
+			  margin: auto;
+			  right: 0;
+			  top: 3px;
+
+			  @media #{$medium-up} {
+			  	border-width: 5px;
+			  	height: 40px;
+			  	top: 5px;
+			  	width: 40px;
+			  }
+			}
+		}
+	}
+}
+
+.landing-loader {
+	.radial-pulse-outer {
+		@include animation(pulse-fade 2.1s linear infinite);
+		@include border-radius(999px);
+  	background: rgba(51, 149, 255, 0.1);
+	  border: 3px solid rgba(51, 149, 255, 0.95);
+	  height: 60px;
+	  margin: auto;
+	  top: 5px;
+	  left: 0;
+	  right: 0;
+	  position: absolute;
+	  width: 60px;
+	  z-index: 1;
+	}
+
+	.radial-pulse-inner {
+		@include animation(pulse-fade 2.1s 0.5s ease-out infinite);
+		@include border-radius(999px);
+  	background: rgba(51, 149, 255, 0.1);
+	  border: 3px solid rgba(51, 149, 255, 0.9);
+	  height: 40px;
+	  margin: 15px auto;
+	  left: 0;
+	  right: 0;
+	  position: absolute;
+	  width: 40px;
+	  z-index: 1;
+	}
+}
+
+.body-loader {
+	@include border-radius(999px);
+  background: $brand-black;
+  background-color: $white;
+  background-size: 80%;
+  background-position: center 58%;
+  background-repeat: no-repeat;
+  height: 80px;
+  left: 0;
+  margin: auto;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 41%;
+  width: 80px;
+  z-index: 0;
+}

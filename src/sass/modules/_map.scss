@@ -1,0 +1,59 @@
+
+// Map
+
+.map {
+	height: 100%;
+	padding: 0;
+}
+
+.map-current-location {
+	@include border-radius(999px);
+	@include box-shadow(1px 0px 5px 3px rgba(50, 50, 50, 0.15));
+	background: $dodger-blue;
+	border: 3px solid $white;
+	box-sizing: border-box;
+	height: 18px;
+	position: relative;
+	width: 18px;
+
+  .radial-pulse {
+		@include animation(pulse-fade 3.1s ease-out infinite);
+		@include border-radius(999px);
+	  background: rgba(51, 149, 255, 0.3);
+	  border-radius: 999px;
+	  height: 100px;
+	  margin: -45px;
+	  position: absolute;
+	  width: 100px;
+	  z-index: -1;
+  }
+}
+
+.map-notification {
+	top: 75px;
+
+	@media #{$medium-up} {
+		top: 99px;
+	}
+
+	@media #{$large-up} {
+		left: 203px;
+		top: 105px;
+	}
+}
+
+.map-reload {
+	top: 35%;
+
+	@media #{$medium-up} {
+		outline: none;
+	}	
+
+	@media #{$large-up} {
+		top: 160px;
+	}
+}
+
+.gm-style-cc:nth-child(n+8) {
+    display: none;
+}

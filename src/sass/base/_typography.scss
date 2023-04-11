@@ -1,0 +1,38 @@
+
+// Typography
+
+// Font
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+// Font Weights
+$font-extra-light: 100;
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+$font-extra-bold: 900;
+
+// Base Font
+$base-font-size: 16px;
+$base-line-height: 24px;
+$base-font-family: 'Lato', sans-serif;
+
+body {
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	font-weight: $font-regular;
+	line-height: $base-line-height;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+// Headings
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 21px;
+}
