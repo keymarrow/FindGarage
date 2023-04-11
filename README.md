@@ -2,7 +2,7 @@
 # FindGarage
 This is web application that connect driver and nearby garages.
 =======
-#Map Panda
+#FIND GARAGE
 
 ######Project Overview
 
@@ -10,7 +10,7 @@ Project #5 of Udacity's [Front-End Web Developer Nanodegree](https://www.udacity
 
 ######Project Description
 
-[Map Panda](https://mappanda.co) grabs the user's location with the [Geolocation API](http://dev.w3.org/geo/api/spec-source.html), and through the [Google Places API](https://developers.google.com/places/) a selection of popular location types are available to explore. The [Foursquare](https://developer.foursquare.com/) and [Uber](https://developer.uber.com/) APIs are leveraged to provide further functionality to the application.
+[FIND GARAGE](https://keymarrow.github.io/FindGarage) grabs the user's location with the [Geolocation API](http://dev.w3.org/geo/api/spec-source.html), and through the [Google Places API](https://developers.google.com/places/) a selection of popular location types are available to explore. The [Foursquare](https://developer.foursquare.com/) and [Uber](https://developer.uber.com/) APIs are leveraged to provide further functionality to the application.
 
 ##Getting Started
 
@@ -23,7 +23,7 @@ Point your browser to https://mappanda.co
 **1.** Clone this repo:
 
 ```
-$ git clone https://github.com/keymarrow
+$ git clone https://github.com/keymarrow/FindGarage
 ````
 
 **2.** Serve the application:

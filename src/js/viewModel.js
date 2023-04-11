@@ -70,7 +70,7 @@ var ViewModel = function() {
 	 */
 	this.appLandingLoadingVisibility = ko.observable(false)
 	/**
-	 * App reload visibility - show/hide the app reload button ('Reload Map Panda')
+	 * App reload visibility - show/hide the app reload button ('Reload FIND GARAGE')
 	 * @type {boolean}
 	 */
 	this.appReloadVisbility = ko.observable(false);
